@@ -1,0 +1,149 @@
+body {
+    font-family: "Josefin Sans", sans-serif;
+    text-align: center;
+  }
+  
+  #logo {
+    width: 200px;
+    height: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  a {
+    color: black;
+  }
+  
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar {
+    text-decoration: none;
+    padding: 15px;
+    font-size: 23px;
+    font-weight: bold;
+  }
+  
+  .navbar:hover {
+    color: #1976bb;
+    font-size: 30px;
+  }
+  
+  li {
+    display: inline;
+  }
+  
+  #features {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #twitter-image {
+    width: 45px;
+    height: 45px;
+  }
+  
+  #instagram-image {
+    width: 45px;
+    height: 45px;
+  }
+  
+  #twitter {
+    margin: 4px;
+  }
+
+  #twitter-image:hover {
+    width: 55px;
+    height: 55px;
+  }
+  
+  #instagram {
+    margin: 4px;
+  }
+
+  #instagram-image:hover {
+    width: 55px;
+    height: 55px;
+  }
+  
+  #scroll {
+    display: none;
+    width: 70px !important;
+    height: 70px !important;
+    margin-top: 150px;
+  }
+
+  #posts {
+    display: grid;
+    gap: 100px 100px;
+    grid-template-columns: auto auto;
+  }
+
+  #begin {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #initiative {
+    width: 450px;
+    font-size: 25px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  [aos="fade"] {
+    opacity: 0;
+    transition-property: opacity;
+  }
+  
+  [aos="fade"].aos-animate {
+    opacity: 1;
+  }
+  
+  /* Extra small devices (phones, 600px and down) */
+  @media only screen and (max-width: 600px) {
+    .navbar {
+      display: flex;
+      flex-direction: column;
+      text-decoration: none;
+      padding: 20px;
+      font-size: 50px;
+      font-weight: bold;
+    }
+  
+    .navbar:hover {
+      color: #1976bb;
+      font-size: 80px;
+    }
+
+    ul {
+        margin-top: 90px;
+    }
+  
+    #scroll {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 40px;
+      height: 40px;
+      animation-direction: alternate-reverse;
+      animation-iteration-count: infinite;
+      animation-duration: 1s;
+      animation-name: scroll;
+    }
+  
+    @keyframes scroll {
+      0% {
+        transform: translate(0px, 0px);
+      }
+  
+      100% {
+        transform: translate(0px, 20px);
+      }
+    }
+  }
+  
